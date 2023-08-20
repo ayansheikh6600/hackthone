@@ -110,3 +110,8 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
     height: 50px !important;
 }
+
+.ayan{
+    width: 35px !important;
+    height: 35px !important;
+}

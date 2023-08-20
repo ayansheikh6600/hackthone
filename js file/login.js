@@ -23,9 +23,11 @@ function login() {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
     const loginBtn = document.getElementById("loginBtn")
-    loginBtn.innerHTML = `<div class="spinner-border text-light" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>`
+    loginBtn.innerHTML = `<div class="ayan">
+    <div class="spinner-border text-light ayan" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>`
     signInWithEmailAndPassword(auth, email, password)
         .then(async (userCredential) => {
             // Signed in 

@@ -26,6 +26,9 @@ function Signup() {
     const password = document.getElementById("password").value
     const Cpassword = document.getElementById("Cpassword").value
     const ProfileImage = document.getElementById("ProfileImage").files[0]
+    const signupBtn = document.getElementById("signupBtn")
+
+   
 
     console.log(ProfileImage)
 
@@ -38,6 +41,12 @@ function Signup() {
         alert("Please enter required feilds")
         return
     }
+
+    signupBtn.innerHTML = `<div class="ayan">
+    <div class="spinner-border text-light ayan" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>`
 
     if (FirstName.length >= 3) {
 
@@ -132,26 +141,26 @@ function Signup() {
 
                     } else {
                         alert("Password Does not Match")
-                        e.innerHTML = "Login"
+                        signupBtn.innerHTML = "SIGNUP"
                     }
                 } else {
                     alert("Password must be 8 & more character")
-                    e.innerHTML = "Login"
+                    signupBtn.innerHTML = "SIGNUP"
                 }
 
             } else {
                 alert("First And Last don't Upto 20 character")
-                e.innerHTML = "Login"
+                signupBtn.innerHTML = "SIGNUP"
             }
 
         } else {
             alert("FirstName Atleast upto 1 character")
-            e.innerHTML = "Login"
+            signupBtn.innerHTML = "SIGNUP"
         }
 
     } else {
         alert("FirstName Atleast upto 3 character")
-        e.innerHTML = "Login"
+        signupBtn.innerHTML = "SIGNUP"
     }
 
 
