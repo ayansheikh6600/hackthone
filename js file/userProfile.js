@@ -49,7 +49,7 @@ window.addEventListener("load", async function () {
             </div>
           </div>
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos impedit quaerat, ducimus commodi assumenda necessitatibus maiores doloribus cum fugit rerum vel nulla dolore aperiam! Totam amet reiciendis minima in.</p>
+            <p>${BlogData.Desc}</p>
           </div>
           </div>`
 
