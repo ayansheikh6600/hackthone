@@ -68,12 +68,14 @@ window.addEventListener("load", async function () {
     const FName = document.getElementById("FName")
     const LName = document.getElementById("LName")
     const UserEmail = document.getElementById("UserEmail")
+    const userName = document.getElementById("userName")
 
 
     FName.value = dtata.FirstName
     LName.value = dtata.LastName
     UserEmail.value = dtata.email
     ProfileImage.src = dtata.ProfileImageURL
+    userName.innerHTML = dtata.FirstName + " " + dtata.LastName
 
     } else {
         // docSnap.data() will be undefined in this case
